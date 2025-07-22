@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PIGO Publicidad</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <img src="logo.svg" alt="Logo PIGO" />
+        <div>
+          <span class="marca">PIGO</span><br/>
+          <span class="submarca">Soluciones en Publicidad e Impresión</span>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">Acerca</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-text-only">
+      <h1>Publicidad que destaca<br/>Tu marca, nuestro compromiso</h1>
+    </div>
+  </section>
+
+  <!-- ACERCA -->
+  <section id="about" class="section">
+    <div class="container about-container">
+      <div class="about-text">
+        <h2>Sobre PIGO Publicidad</h2>
+        <p>
+          Somos un negocio local ubicado en Minatitlán, Veracruz, dedicado a la impresión profesional de lonas, vinilos, anuncios y soluciones visuales para tu marca. Registrado oficialmente ante el SAT bajo el nombre legal de NAYSIN GUADALUPE PONCE LOPEZ, operamos desde 2011 con el firme propósito de impulsar tu negocio con productos de alta calidad.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="section alt">
+    <div class="container cards">
+      <div class="card card-icon">
+        <h3>Lonas y vinilos</h3>
+        <p>Impresión en gran formato para exterior e interior.</p>
+      </div>
+      <div class="card card-icon">
+        <h3>Anuncios publicitarios</h3>
+        <p>Fabricación de espectaculares, toldos, rotulación y más.</p>
+      </div>
+      <div class="card card-icon">
+        <h3>Diseño personalizado</h3>
+        <p>Tu idea, nuestro diseño. Creamos lo que tu negocio necesita.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARRUSEL -->
+  <section class="section">
+    <div class="container">
+      <div class="carousel-box">
+        <div class="carousel">
+          <img src="Foto1.jpg" alt="Foto 1" />
+          <img src="Foto2.jpg" alt="Foto 2" />
+          <img src="Foto3.jpg" alt="Foto 3" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section">
+    <div class="container contact-icons">
+      <h2>Contacto</h2>
+      <p>Teléfono: 922 162 0047</p>
+      <p>Correo: pigodesarrollador@gmail.com</p>
+      <p>Dirección: Calle Sebastián Lerdo de Tejada 85-B, Col. Centro, Minatitlán, Veracruz</p>
+    </div>
+  </section>
+
+  <!-- CARRUSEL JS -->
+  <script>
+    const imgs = document.querySelectorAll('.carousel img');
+    let index = 0;
+    function showNextImage() {
+      imgs.forEach(img => img.classList.remove('active'));
+      index = (index + 1) % imgs.length;
+      imgs[index].classList.add('active');
+    }
+    if (imgs.length > 0) {
+      imgs[0].classList.add('active');
+      setInterval(showNextImage, 3000);
+    }
+  </script>
+
+ 
+
+
+</body>
+</html>

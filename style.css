@@ -1,0 +1,138 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #0a0a0a;
+  background-color: #fff;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.logo span {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+nav a {
+  margin: 0 12px;
+  color: #27334B;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.hero {
+  background-color: #2e6ef7;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.section {
+  padding: 60px 20px;
+}
+.section.alt {
+  background: #f7f9fb;
+}
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card {
+  flex: 1;
+  min-width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.card-icon {
+  text-align: center;
+}
+.card-icon h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #2e6ef7;
+}
+.card-icon p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.contact-icons {
+  text-align: center;
+}
+.contact-icons p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.logo .marca {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #000;
+  display: block;
+  line-height: 1;
+}
+
+.logo .submarca {
+  font-size: 0.9rem;
+  color: #27334B;
+  display: block;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.carousel {
+  width: 100%;
+  max-width: 500px; /* puedes cambiar a 400px o menos si quieres más chica */
+  margin: 0 auto;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  display: none;
+  border-radius: 10px;
+}
+
+.carousel img.active {
+  display: block;
+  animation: fade 0.5s ease-in-out;
+}
+
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
